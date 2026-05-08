@@ -304,7 +304,7 @@
       updatePaginationControls();
     }
 
-    async function aggiungiPiattoAlMenu(idMeal) {
+    async function aggiungiPiattoAlMenù(idMeal) {
       if (!mioRistorante) {
         alert("Ristorante non trovato.");
         return;
@@ -387,11 +387,11 @@
     function updateAddSelectedButtonLabel() {
       var btn = document.getElementById("addSelectedMeals");
       if (btn) {
-        btn.textContent = "Aggiungi selezionati al Menu (" + selectedMealIds.size + ")";
+        btn.textContent = "Aggiungi selezionati al Menù (" + selectedMealIds.size + ")";
       }
     }
 
-    async function aggiungiPiattiSelezionatiAlMenu() {
+    async function aggiungiPiattiSelezionatiAlMenù() {
       if (!mioRistorante) {
         alert("Ristorante non trovato.");
         return;
@@ -483,7 +483,7 @@
     }
 
     document.getElementById("applyFilter").addEventListener("click", applicaFiltri);
-    document.getElementById("addSelectedMeals").addEventListener("click", aggiungiPiattiSelezionatiAlMenu);
+    document.getElementById("addSelectedMeals").addEventListener("click", aggiungiPiattiSelezionatiAlMenù);
 
     (async function init() {
       await caricaRistorante();
