@@ -72,7 +72,8 @@ La documentazione Swagger è disponibile su `http://localhost:3000/swagger`.
 ┣ 📂README
 ┃ ┣ 📕README.pdf
 ┃ ┣ 📕relazione_progettuale.pdf
-┃ ┗ 📕relazione_tecnica.pdf
+┃ ┣ 📕relazione_tecnica.pdf
+┃ ┗ 🎬Video_Dimostrativo_Progettuale.mp4
 ┣ 📂routes
 ┃ ┣ 📜carts.js
 ┃ ┣ 📜meals.js
