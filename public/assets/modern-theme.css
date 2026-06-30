@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --brand-primary: #185cff;
-  --brand-primary-dark: #003bd1;
-  --brand-accent: #ff5a1f;
-  --brand-accent-soft: #fff1eb;
+  --brand-primary: #00a6a6;
+  --brand-primary-dark: #007a7a;
+  --brand-accent: #ff4f8b;
+  --brand-accent-soft: #fff0f6;
   --surface: #ffffff;
   --surface-solid: #ffffff;
-  --surface-soft: #f7f8fb;
-  --surface-muted: #eef3ff;
-  --text: #111827;
-  --muted: #667085;
-  --border-subtle: #111827;
-  --border-soft: #d8deea;
+  --surface-soft: #fff8ee;
+  --surface-muted: #e6fffb;
+  --text: #16213e;
+  --muted: #6b7280;
+  --border-subtle: #b9ebe6;
+  --border-soft: #edf0f4;
   --shadow-soft: none;
   --shadow-hover: none;
   --radius-sm: 0.25rem;
@@ -22,7 +22,7 @@
 }
 
 * {
-  scrollbar-color: var(--brand-primary) #edf0f7;
+  scrollbar-color: var(--brand-primary) #fff0f6;
   box-sizing: border-box;
 }
 
@@ -32,10 +32,9 @@ html {
 
 body {
   background:
-    linear-gradient(90deg, rgba(24, 92, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(rgba(24, 92, 255, 0.045) 1px, transparent 1px),
-    #fbfcff !important;
-  background-size: 42px 42px;
+    radial-gradient(circle at 12% 10%, rgba(0, 166, 166, 0.10), transparent 22rem),
+    radial-gradient(circle at 88% 18%, rgba(255, 79, 139, 0.10), transparent 20rem),
+    #fffaf3 !important;
   color: var(--text) !important;
   font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
   min-height: 100vh;
@@ -112,7 +111,7 @@ header,
 .modal-content,
 .dropdown-menu {
   background: var(--surface) !important;
-  border: 2px solid var(--border-subtle) !important;
+  border: none !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
 }
@@ -184,7 +183,7 @@ small {
   border-color: var(--brand-primary) !important;
   color: #ffffff !important;
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--text) !important;
+  box-shadow: none !important;
 }
 
 .card,
@@ -198,7 +197,7 @@ small {
 .order-card,
 .stats-card {
   background: var(--surface) !important;
-  border: 2px solid var(--border-subtle) !important;
+  border: none !important;
   border-radius: var(--radius-lg) !important;
   box-shadow: none !important;
   overflow: hidden;
@@ -212,8 +211,8 @@ small {
 .order-card:hover,
 .stats-card:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 6px 6px 0 var(--brand-accent) !important;
-  border-color: var(--text) !important;
+  box-shadow: none !important;
+  background: var(--surface-muted) !important;
 }
 
 .card-header,
@@ -225,7 +224,7 @@ thead,
 .table-dark {
   background: var(--brand-primary) !important;
   color: #ffffff !important;
-  border-bottom: 2px solid var(--text) !important;
+  border-bottom: none !important;
   font-weight: 800;
 }
 
@@ -272,7 +271,7 @@ textarea:focus,
 input:focus {
   background: #ffffff !important;
   border-color: var(--brand-primary) !important;
-  box-shadow: 4px 4px 0 var(--brand-accent) !important;
+  box-shadow: 0 0 0 0.18rem rgba(0, 166, 166, 0.14) !important;
   outline: none !important;
 }
 
@@ -293,7 +292,7 @@ button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover {
   transform: translate(-2px, -2px);
-  box-shadow: 4px 4px 0 var(--text) !important;
+  box-shadow: none !important;
 }
 
 .btn-primary,
@@ -341,9 +340,9 @@ input[type="button"]:hover {
 .pill {
   border-radius: 999px !important;
   padding: 0.45em 0.8em;
-  border: 2px solid var(--text);
+  border: none;
   background: var(--brand-accent) !important;
-  color: var(--text) !important;
+  color: #ffffff !important;
   font-weight: 800;
 }
 
@@ -355,12 +354,12 @@ img,
 }
 
 hr {
-  border-color: var(--border-subtle);
+  border-color: rgba(0, 166, 166, 0.16);
   opacity: 1;
 }
 
 .alert {
-  border: 2px solid var(--border-subtle) !important;
+  border: none !important;
   background: var(--brand-accent-soft) !important;
   color: var(--text) !important;
 }
