@@ -1,4 +1,4 @@
-* ***Struttura del Progetto:***
+* ***Struct del Progetto:***
 
 
 
